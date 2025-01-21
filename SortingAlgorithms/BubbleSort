@@ -1,0 +1,11 @@
+'''In each pass we will find the biggest element and place it in end.Biggest element will find by swapping to each next other element in the pass.'''
+
+#Solution:
+class Solution:
+    #Function to sort the array using bubble sort algorithm.
+    def bubbleSort(self,arr):
+        n=len(arr)
+        for i in range(n-1,0,-1):
+            for j in range(0,i):
+                if(arr[j]>arr[j+1]):
+                    arr[j+1],arr[j]=arr[j],arr[j+1]
