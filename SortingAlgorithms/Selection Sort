@@ -1,0 +1,13 @@
+'''In every pass find minimum and place in front of array'''
+
+
+#Solution:
+
+
+class Solution: 
+    def selectionSort(self, arr):
+        n=len(arr)
+        for i in range(0,n-1):
+            for j in range(i,n):
+                if(arr[j]<arr[i]):
+                    arr[i],arr[j]=arr[j],arr[i]
